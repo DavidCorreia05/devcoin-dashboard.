@@ -10,6 +10,7 @@ import Transactions from "@/pages/Transactions";
 import Admin from "@/pages/Admin";
 import Settings from "@/pages/Settings";
 import { CONFIG } from "@/lib/constants";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 function Router() {
   return (
     <Switch>
@@ -29,6 +30,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <SpeedInsights />
       </TooltipProvider>
     </QueryClientProvider>
   );
